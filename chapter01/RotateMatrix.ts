@@ -1,4 +1,4 @@
-function RotateMatrix(matrix) {
+function RotateMatrix(matrix: number[][]): number[][] {
     let [m, n] = [matrix.length, matrix[0].length];
 
     for (let row = 0; row < m; row++) {

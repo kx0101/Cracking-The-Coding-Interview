@@ -1,7 +1,6 @@
-function ZeroMatrix(matrix) {
+function ZeroMatrix(matrix: number[][]): number[][] {
     let [m, n] = [matrix.length, matrix[0].length];
     let setZero = false;
-
     for (let row = 0; row < m; row++) {
         for (let col = 0; col < n; col++) {
             if (matrix[row][col] === 0) {

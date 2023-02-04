@@ -1,6 +1,6 @@
-function URLify(s) {
-  let word = "";
-  let sentence = [];
+function URLify(s: string): string {
+  let word: string = "";
+  let sentence = new Array<string>();
 
   for (let i = 0; i < s.length; i++) {
     if (s[i] !== " ") {

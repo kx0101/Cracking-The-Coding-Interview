@@ -1,4 +1,4 @@
-function OneAway(s1, s2) {
+function OneAway(s1: string, s2: string): boolean {
   if (Math.abs(s1.length - s2.length) > 2) return false;
 
   let edits = 0;
@@ -23,7 +23,7 @@ function OneAway(s1, s2) {
   return edits <= 1;
 }
 
-function moveBothPointers(i, j) {
+function moveBothPointers(i: number, j: number): number[] {
   return [i + 1, j + 1];
 }
 

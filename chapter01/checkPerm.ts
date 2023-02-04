@@ -1,4 +1,4 @@
-function checkPerm(s1, s2) {
+function checkPerm(s1: string, s2: string): boolean {
   if (s1.length !== s2.length) {
     return false;
   }
@@ -6,7 +6,7 @@ function checkPerm(s1, s2) {
   return permutation(s1, s2);
 }
 
-function permutation(s1, s2) {
+function permutation(s1: string, s2: string): boolean {
   return s1.split('').sort().join('') === s2.split('').sort().join('');
 }
 
