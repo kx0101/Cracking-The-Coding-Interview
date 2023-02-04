@@ -1,0 +1,13 @@
+function StringRotation(s1, s2) {
+    if (s1.length !== s2.length) return false;
+
+    // return isSubString(s1 + s1, s2);
+    return (s1 + s1).includes(s2);
+}
+
+function isSubString(s, pattern) {
+    return s.includes(pattern);
+}
+
+console.log(StringRotation("waterbottle", "erbtotlewat"));
+console.log(StringRotation("itakistakis", "erbtotlewat"));
