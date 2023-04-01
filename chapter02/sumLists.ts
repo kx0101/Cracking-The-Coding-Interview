@@ -5,8 +5,7 @@ class ListNode {
     constructor(data: number) {
         this.data = data;
         this.next = null;
-    }
-}
+    } }
 
 function sumList(l1: ListNode | null, l2: ListNode | null): ListNode | null {
     let dummy = new ListNode(0);
